@@ -4,6 +4,14 @@
         "source": "/Users/student/Documents/FTC/ftc_app-master/FtcRobotController/src/main/res/menu/ftc_robot_controller.xml"
     },
     {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/debug/menu/main_menu.xml",
+        "source": "/Users/student/.android/build-cache/fb2d88d94370bfb33c0336a19038b41c084fd4bc/output/res/menu/main_menu.xml"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/debug/menu/menu_server.xml",
+        "source": "/Users/student/.android/build-cache/7b69c9bcf607f7704fea49549033dbfcb4ffbbcc/output/res/menu/menu_server.xml"
+    },
+    {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/FtcRobotController/build/intermediates/res/merged/debug/menu/main_menu.xml",
         "source": "/Users/student/.android/build-cache/5d4127b9498f5f582bc5578fc2be820b7c23873a/output/res/menu/main_menu.xml"
     },
@@ -18,6 +26,10 @@
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/debug/menu/main_menu.xml",
         "source": "/Users/student/.android/build-cache/f8a7d29e688c564848a91531b348af59c8a864b7/output/res/menu/main_menu.xml"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/debug/menu/ftc_robot_controller.xml",
+        "source": "/Users/student/StudioProjects/StandardModel_17-18/FtcRobotController/src/main/res/menu/ftc_robot_controller.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/debug/menu/ftc_robot_controller.xml",

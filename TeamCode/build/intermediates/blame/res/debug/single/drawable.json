@@ -8,12 +8,20 @@
         "source": "/Users/student/.android/build-cache/8d0400187b1a46993ec0b602d6701833990f7576/output/res/drawable/feedback_shape_orange.xml"
     },
     {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/drawable/icon_menu.png",
+        "source": "/Users/student/.android/build-cache/fb2d88d94370bfb33c0336a19038b41c084fd4bc/output/res/drawable/icon_menu.png"
+    },
+    {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/drawable/black_border.xml",
         "source": "/Users/student/.android/build-cache/3344617a295da62bd0b0b1656d0a31abf29c8b1f/output/res/drawable/black_border.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/drawable/icon_robotcontroller.png",
         "source": "/Users/student/.android/build-cache/f8a7d29e688c564848a91531b348af59c8a864b7/output/res/drawable/icon_robotcontroller.png"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/drawable/black_border.xml",
+        "source": "/Users/student/.android/build-cache/7b69c9bcf607f7704fea49549033dbfcb4ffbbcc/output/res/drawable/black_border.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/drawable/black_border.xml",
@@ -32,11 +40,23 @@
         "source": "/Users/student/.android/build-cache/5b447e85ff43d2c74d71529aa2db6816b997fafa/output/res/drawable/button_shape.xml"
     },
     {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/drawable/feedback_shape_orange.xml",
+        "source": "/Users/student/.android/build-cache/335d47d70bd328d678fe7fc4e1e85b9ef9ae933a/output/res/drawable/feedback_shape_orange.xml"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/drawable/icon_robotcontroller.png",
+        "source": "/Users/student/.android/build-cache/fb2d88d94370bfb33c0336a19038b41c084fd4bc/output/res/drawable/icon_robotcontroller.png"
+    },
+    {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/drawable/icon_menu.png",
         "source": "/Users/student/.android/build-cache/5d4127b9498f5f582bc5578fc2be820b7c23873a/output/res/drawable/icon_menu.png"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/drawable/icon_robotcontroller.png",
         "source": "/Users/student/.android/build-cache/5d4127b9498f5f582bc5578fc2be820b7c23873a/output/res/drawable/icon_robotcontroller.png"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/drawable/button_shape.xml",
+        "source": "/Users/student/.android/build-cache/d6df95aa68942580e6530b870ab27b9c5b2feb85/output/res/drawable/button_shape.xml"
     }
 ]

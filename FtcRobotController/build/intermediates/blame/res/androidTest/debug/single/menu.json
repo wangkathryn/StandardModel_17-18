@@ -12,8 +12,20 @@
         "source": "/Users/student/Documents/FTC/ftc_app-master/FtcRobotController/build/intermediates/bundles/debug/res/menu/ftc_robot_controller.xml"
     },
     {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/androidTest/debug/menu/main_menu.xml",
+        "source": "/Users/student/.android/build-cache/fb2d88d94370bfb33c0336a19038b41c084fd4bc/output/res/menu/main_menu.xml"
+    },
+    {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/FtcRobotController/build/intermediates/res/merged/androidTest/debug/menu/menu_server.xml",
         "source": "/Users/student/.android/build-cache/3344617a295da62bd0b0b1656d0a31abf29c8b1f/output/res/menu/menu_server.xml"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/androidTest/debug/menu/menu_server.xml",
+        "source": "/Users/student/.android/build-cache/7b69c9bcf607f7704fea49549033dbfcb4ffbbcc/output/res/menu/menu_server.xml"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/androidTest/debug/menu/ftc_robot_controller.xml",
+        "source": "/Users/student/StudioProjects/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/debug/res/menu/ftc_robot_controller.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/androidTest/debug/menu/main_menu.xml",

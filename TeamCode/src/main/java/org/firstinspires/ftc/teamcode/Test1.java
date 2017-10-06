@@ -32,25 +32,13 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
+import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 
-
-/**
- * This file contains an minimal example of a Linear "OpMode". An OpMode is a 'program' that runs in either
- * the autonomous or the teleop period of an FTC match. The names of OpModes appear on the menu
- * of the FTC Driver Station. When an selection is made from the menu, the corresponding OpMode
- * class is instantiated on the Robot Controller and executed.
- *
- * This particular OpMode just executes a basic Tank Drive Teleop for a two wheeled robot
- * It includes all the skeletal structure that all linear OpModes contain.
- *
- * Use Android Studios to Copy this Class, and Paste it into your team's code folder with a new name.
- * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list
- */
-
 @TeleOp(name="Basic: Linear OpMode", group="Linear Opmode")
-public class BasicOpMode_Linear extends LinearOpMode {
+public class Test1 extends LinearOpMode {
 
     // Declare OpMode members.
     private ElapsedTime runtime = new ElapsedTime();
@@ -58,9 +46,23 @@ public class BasicOpMode_Linear extends LinearOpMode {
     private DcMotor FrontRightDrive = null;
     private DcMotor BackLeftDrive = null;
     private DcMotor BackRightDrive = null;
+    private DcMotor LiftDrive = null;
+
+
+    static final double INCREMENT   = 0.01;     // amount to slew servo each CYCLE_MS cycle
+    static final int    CYCLE_MS    =   50;     // period of each cycle
+    static final double MAX_POS     =  1.0;     // Maximum rotational position
+    static final double MIN_POS     =  0.0;     // Minimum rotational position
+
+    // Define class members
+    Servo servo;
+    double  servoposition = (MAX_POS - MIN_POS) / 2; // Start at halfway position
+    boolean rampUp = true;
 
     @Override
     public void runOpMode() {
+        servo = hardwareMap.get(Servo.class, "left_hand");
+
         telemetry.addData("Status", "Initialized");
         telemetry.update();
 
@@ -71,12 +73,15 @@ public class BasicOpMode_Linear extends LinearOpMode {
         FrontRightDrive = hardwareMap.get(DcMotor.class, "FRD");
         BackLeftDrive = hardwareMap.get(DcMotor.class, "BLD");
         BackRightDrive = hardwareMap.get(DcMotor.class, "BRD");
+        LiftDrive = hardwareMap.get(DcMotor.class, "LD");
+
 
 
         // Most robots need the motor on one side to be reversed to drive forward
         // Reverse the motor that runs backwards when connected directly to the battery
         FrontLeftDrive.setDirection(DcMotor.Direction.FORWARD);
         FrontRightDrive.setDirection(DcMotor.Direction.REVERSE);
+        LiftDrive.setDirection(DcMotor.Direction.FORWARD);
 
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
@@ -88,6 +93,27 @@ public class BasicOpMode_Linear extends LinearOpMode {
             // Setup a variable for each drive wheel to save power level for telemetry
             double leftPower;
             double rightPower;
+
+
+            if (gamepad1.a) {
+                servoposition += INCREMENT;
+            }
+
+            if (gamepad1.b) {
+                servoposition -= INCREMENT;
+            }
+
+            if (servoposition >= 1)  servoposition = 1;
+            if (servoposition <= 0) servoposition = 0;
+
+
+            // Display the current value
+            telemetry.addData("Servo Position", "%5.2f", servoposition);
+            telemetry.addData(">", "Press Stop to end test." );
+            telemetry.update();
+
+            // Set the servo to the new position and pause;
+            servo.setPosition(servoposition);
 
             // Choose to drive using either Tank Mode, or POV Mode
             // Comment out the method that's not used.  The default below is POV.
@@ -114,6 +140,20 @@ public class BasicOpMode_Linear extends LinearOpMode {
             telemetry.addData("Status", "Run Time: " + runtime.toString());
             telemetry.addData("Motors", "left (%.2f), right (%.2f)", leftPower, rightPower);
             telemetry.update();
+
+
+            if(gamepad1.x) {
+                LiftDrive.setPower(0.5);
+            } else if(gamepad1.y) {
+                LiftDrive.setPower(-0.5);
+            }
+            else {
+                LiftDrive.setPower(0);
+            }
+
+
+            sleep(CYCLE_MS);
+            idle();
         }
     }
 }

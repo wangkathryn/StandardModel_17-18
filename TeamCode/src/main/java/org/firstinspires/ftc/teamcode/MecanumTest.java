@@ -37,8 +37,8 @@ import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 
-@TeleOp(name="Basic: Linear OpMode", group="Linear Opmode")
-public class Test1 extends LinearOpMode {
+@TeleOp(name="BadCode", group="Linear Opmode")
+public class BadControllerCode extends LinearOpMode {
 
     // Declare OpMode members.
     private ElapsedTime runtime = new ElapsedTime();
@@ -146,8 +146,7 @@ public class Test1 extends LinearOpMode {
                 LiftDrive.setPower(0.5);
             } else if(gamepad1.y) {
                 LiftDrive.setPower(-0.5);
-            }
-            else {
+            }else {
                 LiftDrive.setPower(0);
             }
 
